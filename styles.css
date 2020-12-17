@@ -1,0 +1,348 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+.header-container {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(231, 231, 231) ;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 97%;
+    margin: auto;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.title{
+    margin-left: 40px;
+}
+
+
+.btn-login-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.btn-login{
+    margin-left: 20px;
+    margin-top: -3px;
+    width: 60%;
+    margin-right: 20px;
+}
+.btn-login button{
+
+    width: 180px;
+    height: 50px;
+    border: 0px;
+    outline:0px;
+    background-color: #FE2C55;
+    padding: 10px 15px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;    
+}
+
+.seccion-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+
+}
+.sec-1-container{
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+    margin-top: 8px;
+}
+
+.btn-foryou-container{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+.btn-foryou-container button{
+    width: 100%;
+    height: 60px;
+    border: 0px;
+    outline: 0px;
+    background-color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+.btn-foryou-container button:hover {
+    background-color: rgb(245, 243, 243);
+}
+.btn-foryou-container i {
+    float: left;
+    margin-left: 20px;
+}
+.btn-foryou-container small {
+    float: left;
+    margin-left:20px ;
+}
+.iniciar-container {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 40px;
+    
+}
+.iniciar-container .iniciar small {
+    font-size: 16px;
+    opacity: .5;
+}
+.iniciar-container .iniciar button {
+    margin-top: 15px;
+    width: 85%;
+    border: 0px;
+    outline:0px;
+    border: 1px solid #FE2C55;
+    background-color: white;
+    padding: 10px 15px;
+    color:  #FE2C55;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.form-container {
+    
+    margin-left: 20px;
+    margin-top: 60px;
+}
+.form-container small {
+    opacity: .5;
+}
+.form-container .option {
+    margin-top: 10px;
+    opacity: .5;
+    width: 170px;
+    height: 40px;
+    padding: 10px;
+}
+.name p {
+    font-weight: bold;
+}
+  
+.sec-2-container{
+    width: 50%;
+    margin-left: 230px;
+}
+.video-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 430px 50px;
+    grid-template-areas: "info-user-container" "user-video" "options";
+}
+.info-user-container{
+    grid-area: info-user-container;
+    display: grid;
+    grid-template-columns: 20% 55% 20%;
+    grid-template-rows: 100px;
+    margin-top: 34px;
+}
+.img-profile {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+    .img-profile img {
+        width: 60px;
+        border-radius: 50%;
+        float: right;
+    }
+.info-user{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+    .follow-container {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .btn-follow {
+        width: 100px;
+        float: right;
+        height: 30px;
+        border: 0px;
+        outline:0px;
+        border: 1px solid #FE2C55;
+        background-color: white;
+        color:  #FE2C55;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 2px;
+    }
+
+.user-video{
+    grid-area: user-video;
+    width: 100%;
+}
+.options{
+    grid-area: options;
+}
+
+.user-video {
+    position: relative;
+    width: 250px;
+    height: 430px;
+    margin-left: 23%;
+    overflow: hidden;
+    border-radius: 7px;
+    outline: none;
+}
+.user-video video {
+    width: 100%;
+    height: 100%;
+}
+.options {
+    width:80%;
+    height: 60px;
+    margin-left: 23%;
+}
+.options i {
+    width: 13%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.sec-3-container{
+    width: 30%;
+}
+.sec-3{
+    padding: 40px;
+}
+.social-networks-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.social-networks-container i {
+    font-size: 30px;
+    width: 35px;   
+}
+.account-container {
+    border: 1px solid rgb(231, 231, 231);
+    margin-top: 20px;
+    border-radius: 7px;
+    overflow: auto;
+    height: 300px;
+
+}
+.account-recommended {
+    display: flex;
+    flex-wrap: wrap;
+    width: 93%;
+    padding: 10px;
+
+}
+.account-img  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+
+}
+.account-username {
+    width: 100px;
+    margin-left: 10px;
+
+}
+.text-recommended  {
+    font-size: 20px;
+    margin-left: 55px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.btn-account {
+    width: 110px;
+    
+}
+.btn-account button {
+    float: right;
+    width: 100px;
+        float: right;
+        height: 30px;
+        border: 0px;
+        outline:0px;
+        border: 1px solid #FE2C55;
+        background-color: white;
+        color:  #FE2C55;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 2px;
+}
+.bars {
+    display: none;
+}
+.up{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: #FE2C55;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    top: 87%;    
+}
+.up i {
+    font-size: 40px;
+    color: white;
+    line-height: 50px;
+}
+@media (max-width:1130px) {
+    .sec-3-container {
+        display: none;
+    }
+    .btn-login-container {
+        width: 40%;
+    }
+    .sec-2-container {
+        width: 80%;
+    }
+}
+@media (max-width:700px) {
+    .sec-1-container{
+        display: none;
+        background-color: white;
+        width: 45%;
+        position: fixed;
+        z-index: 90;
+    }
+    .sec-2-container{
+        width: 90%;
+        margin: auto;
+    }
+    .op{
+        display: flex;
+        flex-wrap: wrap ;
+    }
+    .bars {
+        display: block;
+    }
+    .title {
+        margin-left:10px ;
+    }
+    .btn-login-container{
+        width: 70%;
+    }
+}
